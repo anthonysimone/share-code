@@ -1,3 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="application-wrapper">
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1>{{#link-to 'index'}}E3 Share{{/link-to}}</h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href=""><span></span></a></li>
+  </ul>
 
-{{outlet}}
+  <section class="top-bar-section">
+    <ul class="right">
+      <li>{{#link-to 'protected'}}Protected{{/link-to}}</li>
+      <li>{{#link-to 'resources'}}Resources{{/link-to}}</li>
+      <li>
+      {{#if session.isAuthenticated}}
+        <button {{action 'logout'}}>Logout</button>
+      {{else}}
+        {{#link-to 'login'}}Log In{{/link-to}}   
+      {{/if}}
+      </li>
+    </ul>
+  </section>
+</nav>
+	<h2 id="title">Welcome to Ember</h2>
+
+	{{outlet}}
+</div>

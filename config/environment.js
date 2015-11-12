@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'share-code',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://resplendent-fire-6288.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

@@ -1,0 +1,9 @@
+<ul class="resource-list">
+  {{#each model as |resource|}}
+	<li class="resource">
+	  <h3>{{#link-to "resource" resource.id}}{{resource.title}}{{/link-to}}</h3>
+	  <p>{{resource.description}}</p>
+      <div>ID: <span class="id">{{resource.id}}</span> | Type: <span class="type">{{resource.type}}</span></div>
+ 	</li>
+  {{/each}}
+</ul>

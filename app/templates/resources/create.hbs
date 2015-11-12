@@ -1,0 +1,6 @@
+<h3>Create a new Resource!</h3>
+{{input type="text" placeholder="Title" value=title}}
+{{textarea placeholder="Description" value=description}}
+{{input type="text" placeholder="Type" value=type}}
+{{input type="text" placeholder="Submitter" value=submitter}}
+<button {{action 'addResource'}} class="button submit">Submit</button>
