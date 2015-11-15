@@ -23,5 +23,11 @@
 </nav>
 	<h2 id="title">Welcome to Ember</h2>
 
+  <h3>{{session.isAuthenticated}}</h3>
+  <h3>{{session.foo}}</h3>
+  <h3>{{session.data.authenticated.uid}}</h3>
+  <h3>{{session.currentUser.name}}</h3>
+  <h3>{{session.currentUser.id}}</h3>
+
 	{{outlet}}
 </div>

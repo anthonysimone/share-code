@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
       console.log(this.get('session'));
       
       this.get('session').authenticate('authenticator:firebase', logindata).catch((reason) => {
-        this.set('errorMessage', reason.error);
+        this.set('errorMessage', reason);
       });
     }
   }
