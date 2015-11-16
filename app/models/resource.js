@@ -4,6 +4,7 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr('string'),
   type: DS.attr('string'),
+  tags: DS.hasMany('tag'),
   submitter: DS.attr('string'),
   timestamp: DS.attr('number')
 });

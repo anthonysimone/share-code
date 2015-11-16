@@ -11,6 +11,7 @@
     <ul class="right">
       <li>{{#link-to 'protected'}}Protected{{/link-to}}</li>
       <li>{{#link-to 'resources'}}Resources{{/link-to}}</li>
+      <li>{{#link-to 'resources.create'}}Add New{{/link-to}}</li>
       <li>
       {{#if session.isAuthenticated}}
         <button {{action 'logout'}}>Logout</button>
@@ -24,7 +25,6 @@
 	<h2 id="title">Welcome to Ember</h2>
 
   <h3>{{session.isAuthenticated}}</h3>
-  <h3>{{session.foo}}</h3>
   <h3>{{session.data.authenticated.uid}}</h3>
   <h3>{{session.currentUser.name}}</h3>
   <h3>{{session.currentUser.id}}</h3>

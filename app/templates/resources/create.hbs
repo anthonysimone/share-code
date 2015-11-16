@@ -3,4 +3,14 @@
 {{textarea placeholder="Description" value=description}}
 {{input type="text" placeholder="Type" value=type}}
 {{input type="text" placeholder="Submitter" value=submitter}}
-<button {{action 'addResource'}} class="button submit">Submit</button>
+
+{{!-- {{select-2
+    content=model
+    value=selectedItems
+    multiple=true
+    optionLabelPath="title"
+    optionDescriptionPath="false"
+    placeholder="Make a selection"
+}} --}}
+
+<button {{action 'addResource' title description type submitter}} class="button submit">Submit</button>

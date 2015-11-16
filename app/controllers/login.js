@@ -9,10 +9,6 @@ export default Ember.Controller.extend({
       let logindata = [];
       logindata.email = identification;
       logindata.password = password;
-      console.log('trying to authenticate');
-      console.log(identification);
-      console.log(password);
-      console.log(this.get('session'));
       
       this.get('session').authenticate('authenticator:firebase', logindata).catch((reason) => {
         this.set('errorMessage', reason);

@@ -6,7 +6,6 @@ export default {
   before: "ember-simple-auth",
   initialize: function(container) {
     Session.reopen({
-      foo: "bar",
       setCurrentUser: function() {
         var id = this.get("data.authenticated.uid");
         var self = this;

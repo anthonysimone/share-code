@@ -1,4 +1,3 @@
-<div class="test-select2">
 {{select-2
     content=model
     value=selectedItems
@@ -7,10 +6,3 @@
     optionDescriptionPath="false"
     placeholder="Make a selection"
 }}
-</div>
-
-<ul class="resource-list">
-  {{#each model as |resource|}}
-	{{resource-item resource=resource}}
-  {{/each}}
-</ul>
