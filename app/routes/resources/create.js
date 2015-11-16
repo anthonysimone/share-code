@@ -4,7 +4,8 @@ import AuthenticatedRouteMixin from 'ember-simple-auth/mixins/authenticated-rout
 export default Ember.Route.extend(
   AuthenticatedRouteMixin, {
   model() {
-    //return this.store.find('resource');
+    // @TODO: Calling tag model for convenience, need to figure out a good way to call multiple models
+    return this.store.find('tag');
   },
   actions: {
     addResource: function(title, description, type, submitter) {

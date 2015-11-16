@@ -4,13 +4,13 @@
 {{input type="text" placeholder="Type" value=type}}
 {{input type="text" placeholder="Submitter" value=submitter}}
 
-{{!-- {{select-2
+{{select-2
     content=model
     value=selectedItems
     multiple=true
-    optionLabelPath="title"
+    optionLabelPath="name"
     optionDescriptionPath="false"
-    placeholder="Make a selection"
-}} --}}
+    placeholder="Pick Some Tags"
+}}
 
 <button {{action 'addResource' title description type submitter}} class="button submit">Submit</button>
